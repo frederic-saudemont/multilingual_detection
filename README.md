@@ -42,7 +42,11 @@ The data example  was built from different languages of wikipedia entries of [*C
 
 ### Output
 
-The output of this program is a json file with for each chunk of text, its source text, its language and the confidence index given by Fasttext, as follows:
+The output of this program is a json file with three arguments and values:
+- **"text"**: source text
+- **"lang"**: language ISO code (see ISO [639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes))
+- **"confidence"**: Fasttext's confidence index for the given language (score between 0 and 1, rounded to 4 decimals)
+
 ```xml
 [
 {
