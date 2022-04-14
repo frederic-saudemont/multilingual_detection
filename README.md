@@ -28,7 +28,9 @@ python fasttext_model_path txt_file_path json_output_path
 
 ### Configuration
 
-The tokenizer used in this program (NLTK Punkt) has been altered in order to keep unchanged the formatting (i.e., line breaks).      
+The tokenizer used in this program (NLTK Punkt) has been altered in order to accept different end of sentence indices (e.g.,"**。**" which is the Simplified Chinese and Japanese full stop). 
+
+In addition, the tokenizer has been modified to keep unchanged the formatting (i.e., line breaks).      
 
 Line breaks in json files are represented by "\n". If you want to remove those, change the parameter ```line_break=True``` line 100 of the Python file by ```line_break=False```.
 
